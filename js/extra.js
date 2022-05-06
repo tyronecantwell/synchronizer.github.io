@@ -51,7 +51,7 @@ async function submitForm(e, form) {
 
     // setTimeOut
 
-    setTimeout(() => btnSubmit.disabled = false, 5000);
+    setTimeout(() => btnSubmit.disabled = false, 2000);
 
     const jsonFormData = buildJsonFormData(form);
 
@@ -63,9 +63,9 @@ async function submitForm(e, form) {
 
     alert('synchronization completed');
 
-    if (response) {
-        window.location = '/testimonial.html'
-    }
+    // if (response) {
+    //     window.location = '/testimonial.html'
+    // }
 }
 
 
@@ -100,8 +100,8 @@ async function performPostHttpRequest(fetchlink, body) {
                 return 'her';
             })
 
-        const content = await rawResponse.json();
-        return content;
+        // const content = await rawResponse.json();
+        // return content;
     }
     catch (err) {
         console.log(`Error at fetching: ${err}`);
