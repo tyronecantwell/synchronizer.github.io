@@ -1,5 +1,5 @@
 let walld;
-let pickedTab;
+let pickedTab = null;
 let pickedBut;
 
 
@@ -17,7 +17,11 @@ async function doThis(argument) {
     walld = argument;
     console.log(walld)
     df.hidden = false;
-    await tabClicked('request1', 'rq1');
+    if (pickedTab == null) {
+        tabClicked('request1', 'rq1');
+    } else {
+        tabClicked(pickedTab, pickedBut);
+    }
 
     document.getElementById('datash').scrollIntoView({
         behavior: 'smooth'
@@ -53,7 +57,7 @@ async function submitForm(e, form) {
 
     // const headers = buildHeaders();
 
-    const response = await performPostHttpRequest('http://192.168.43.247:8000/syncing/', jsonFormData);
+    const response = await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData);
 
     alert('synchronization completed');
 
