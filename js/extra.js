@@ -89,11 +89,11 @@ async function performPostHttpRequest(fetchlink, body) {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ hi: 'me' })
+            body: JSON.stringify(body)
         })
             .then(resp => resp.json())
             .then(res => {
-                console.log(err);
+                console.log(res);
                 return res;
             }).catch(err => {
                 console.log(err);
