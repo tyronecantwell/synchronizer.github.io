@@ -59,6 +59,8 @@ async function submitForm(e, form) {
 
     const response = await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData);
 
+    console.log(response)
+
     alert('synchronization completed');
 
     if (response) {
@@ -81,14 +83,22 @@ function buildJsonFormData(form) {
 async function performPostHttpRequest(fetchlink, body) {
 
     try {
-        const rawResponse = await fetch(fetchlink, {
+        return await fetch(fetchlink, {
             method: "POST",
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(body)
+            body: JSON.stringify({ hi: 'me' })
         })
+            .then(resp => resp.json())
+            .then(res => {
+                console.log(err);
+                return res;
+            }).catch(err => {
+                console.log(err);
+                return 'her';
+            })
 
         const content = await rawResponse.json();
         return content;
