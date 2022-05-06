@@ -1,5 +1,5 @@
 let walld;
-let pickedTab = null;
+let pickedTab = 0;
 let pickedBut;
 
 
@@ -17,7 +17,7 @@ async function doThis(argument) {
     walld = argument;
     console.log(walld)
     df.hidden = false;
-    if (pickedTab == null) {
+    if (pickedTab === 0) {
         tabClicked('request1', 'rq1');
     } else {
         tabClicked(pickedTab, pickedBut);
