@@ -93,10 +93,14 @@ async function performPostHttpRequest(fetchlink, body) {
         })
             .then(resp => resp.json())
             .then(res => {
+
                 console.log(res);
                 return res;
-            }).catch(err => {
-                console.log(err);
+            })
+
+
+            .catch(err => {
+                // console.log(err);
                 return 'her';
             })
 
