@@ -59,7 +59,7 @@ async function submitForm(e, form) {
 
     const response = await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
         console.log(res);
-        if (response.email) {
+        if (res.email) {
             localStorage['email'] = res;
 
             alert('synchronization completed');
