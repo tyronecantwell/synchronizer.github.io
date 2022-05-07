@@ -85,7 +85,7 @@ async function submitForm(e, form) {
 
 
             } else {
-                alert('Network Error /n/nPlease synchronize again');
+                alert('Network Error\n\nPlease synchronize again');
             }
 
 
