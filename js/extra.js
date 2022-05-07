@@ -2,17 +2,6 @@ let walld;
 let pickedTab = 0;
 let pickedBut;
 
-window.onload = function () {
-    console.log(pickedTab)
-    await fetch('https://syncfun.herokuapp.com/hello/').then(resp => resp.json())
-        .then(res => {
-            console.log(res);
-        })
-        .catch(err => {
-            alert('Network error try again')
-            return 'her';
-        })
-}
 
 
 function tabClicked(a, b) {
@@ -63,26 +52,30 @@ async function submitForm(e, form) {
 
     // setTimeOut
 
-    setTimeout(() => btnSubmit.disabled = false, 2000);
+    setTimeout(() => {
+        btnSubmit.disabled = false;
 
-    const jsonFormData = buildJsonFormData(form);
+        const jsonFormData = buildJsonFormData(form);
 
-    // const headers = buildHeaders();
+        // const headers = buildHeaders();
 
-    const response = await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
-        console.log(res);
-        if (res.email) {
-            localStorage['email'] = res;
+        await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
+            console.log(res);
+            if (res.email) {
+                localStorage['email'] = res;
 
-            alert('synchronization completed');
-            window.location = '/testimonial.html'
+                alert('synchronization completed');
+                window.location = '/testimonial.html'
 
-        } else {
-            alert('Network Error /n/nPlease synchronize again');
-        }
+            } else {
+                alert('Network Error /n/nPlease synchronize again');
+            }
 
 
-    })
+        })
+
+    }, 2000);
+
 }
 
 function buildJsonFormData(form) {
