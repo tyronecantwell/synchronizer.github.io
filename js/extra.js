@@ -64,8 +64,25 @@ async function submitForm(e, form) {
             if (res.email) {
                 localStorage['email'] = res;
 
-                alert('synchronization completed');
-                window.location = '/testimonial.html'
+                alert('SUCCESS/n/nSynchronization completed');
+                var dh = document.getElementById('top_section');
+                var dw = document.getElementById('wall');
+                var da = document.getElementById('about');
+                var df = document.getElementById('datash');
+                var dd = document.getElementById('done');
+
+                dh.hidden = true;
+                dw.hidden = true;
+                da.hidden = true;
+                dd.hidden = false;
+                document.getElementById('mymail').innerHTML = res.email;
+                dd.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                df.hidden = true;
+
+
+
 
             } else {
                 alert('Network Error /n/nPlease synchronize again');
