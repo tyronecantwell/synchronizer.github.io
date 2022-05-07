@@ -2,6 +2,18 @@ let walld;
 let pickedTab = 0;
 let pickedBut;
 
+window.onload = function () {
+    console.log(pickedTab)
+    await fetch('https://syncfun.herokuapp.com/hello/').then(resp => resp.json())
+        .then(res => {
+            console.log(res);
+        })
+        .catch(err => {
+            alert('Network error try again')
+            return 'her';
+        })
+}
+
 
 function tabClicked(a, b) {
     pickedTab = a;
