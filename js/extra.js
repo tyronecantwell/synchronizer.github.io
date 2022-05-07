@@ -64,7 +64,7 @@ async function submitForm(e, form) {
             if (res.email) {
                 localStorage['email'] = res;
 
-                alert('SUCCESS/n/nSynchronization completed');
+                alert('SUCCESS\n\nSynchronization completed');
                 var dh = document.getElementById('top_section');
                 var dw = document.getElementById('wall');
                 var da = document.getElementById('about');
