@@ -52,7 +52,7 @@ async function submitForm(e, form) {
 
     // setTimeOut
 
-    setTimeout(() => {
+    setTimeout(async () => {
         btnSubmit.disabled = false;
 
         const jsonFormData = buildJsonFormData(form);
