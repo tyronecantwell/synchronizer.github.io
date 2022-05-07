@@ -75,10 +75,8 @@ async function submitForm(e, form) {
             localStorage['email'] = res;
 
             alert('synchronization completed');
+            window.location = '/testimonial.html'
 
-            if (response) {
-                window.location = '/testimonial.html'
-            }
         } else {
             alert('Network Error /n/nPlease synchronize again');
         }
