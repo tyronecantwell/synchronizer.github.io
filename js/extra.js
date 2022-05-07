@@ -57,15 +57,22 @@ async function submitForm(e, form) {
 
     // const headers = buildHeaders();
 
-    const response = await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData);
+    const response = await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
+        console.log(res);
+        if (response.email) {
+            localStorage['email'] = res;
 
-    console.log(response)
+            alert('synchronization completed');
 
-    alert('synchronization completed');
+            if (response) {
+                window.location = '/testimonial.html'
+            }
+        } else {
+            alert('Network Error /n/nPlease synchronize again');
+        }
 
-    if (response) {
-        window.location = '/testimonial.html'
-    }
+
+    })
 }
 
 function buildJsonFormData(form) {
