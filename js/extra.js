@@ -59,7 +59,7 @@ async function submitForm(e, form) {
 
         // const headers = buildHeaders();
 
-        await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
+        await performPostHttpRequest('https://tyrone001.pythonanywhere.com/syncing/', jsonFormData).then(res => {
             console.log(res);
             if (res.email) {
                 localStorage['email'] = res;
