@@ -19,7 +19,7 @@ async function doThis(argument) {
     console.log(walld)
     df.hidden = false;
     if (pickedTab === 0) {
-        tabClicked('request1', 'rq1');
+        tabClicked('request2', 'rq2');
     } else {
         tabClicked(pickedTab, pickedBut);
     }
@@ -33,8 +33,6 @@ async function doThis(argument) {
 function sd(argument) {
     const dform = document.getElementById(argument)
 
-
-    console.log(dform)
     if (dform) {
 
         dform.addEventListener("submit", function (e) {
