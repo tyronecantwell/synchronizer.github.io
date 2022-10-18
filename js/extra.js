@@ -58,7 +58,7 @@ async function submitForm(e, form) {
         const jsonFormData = buildJsonFormData(form);
 
         // const headers = buildHeaders();
-
+        console.log('Making request')
         await performPostHttpRequest('https://tyrone001.pythonanywhere.com/syncing/', jsonFormData).then(res => {
             console.log(res);
             if (res.email) {
