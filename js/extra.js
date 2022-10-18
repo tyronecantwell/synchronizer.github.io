@@ -18,7 +18,7 @@ async function doThis(argument) {
     console.log(walld)
     df.hidden = false;
     if (pickedTab === 0) {
-        console.log(now)
+        console.log('now')
         tabClicked('request1', 'rq1');
     } else {
         tabClicked(pickedTab, pickedBut);
