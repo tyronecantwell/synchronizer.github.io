@@ -57,7 +57,7 @@ $(function () {
     });
 	
 	
-function getURL() { window.location.href; } ; 
+function getURL() { window.location.href; } var protocol = location.protocol; 
 
 	/* Countdown
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
