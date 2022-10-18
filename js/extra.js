@@ -7,6 +7,7 @@ let pickedBut;
 function tabClicked(a, b) {
     pickedTab = a;
     pickedBut = b;
+    console.log(pickedTab, pickedBut);
 
     sd(pickedTab);
 };
@@ -18,7 +19,6 @@ async function doThis(argument) {
     console.log(walld)
     df.hidden = false;
     if (pickedTab === 0) {
-        console.log('now')
         tabClicked('request1', 'rq1');
     } else {
         tabClicked(pickedTab, pickedBut);
@@ -33,6 +33,8 @@ async function doThis(argument) {
 function sd(argument) {
     const dform = document.getElementById(argument)
 
+
+    console.log(dform)
     if (dform) {
 
         dform.addEventListener("submit", function (e) {
@@ -56,7 +58,7 @@ async function submitForm(e, form) {
         const jsonFormData = buildJsonFormData(form);
 
         // const headers = buildHeaders();
-        console.log('Making request')
+
         await performPostHttpRequest('https://tyrone001.pythonanywhere.com/syncing/', jsonFormData).then(res => {
             console.log(res);
             if (res.email) {
