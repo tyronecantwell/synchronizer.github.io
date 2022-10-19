@@ -58,20 +58,18 @@ async function submitForm(e, form) {
         const jsonFormData = buildJsonFormData(form);
 
         // const headers = buildHeaders();
-        // https://tyrone001.pythonanywhere.com/syncing/
-        await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
+        // 'https://syncfun.herokuapp.com/syncing/',
+        await performPostHttpRequest('https://tyrone001.pythonanywhere.com/syncing/', jsonFormData).then(res => {
             console.log('done', res);
             if (res.email) {
                 localStorage['email'] = res;
 
                 alert('SUCCESS\n\nSynchronization completed');
-                var dh = document.getElementById('top_section');
                 var dw = document.getElementById('wall');
                 var da = document.getElementById('about');
                 var df = document.getElementById('datash');
                 var dd = document.getElementById('done');
 
-                dh.hidden = true;
                 dw.hidden = true;
                 da.hidden = true;
                 dd.hidden = false;
