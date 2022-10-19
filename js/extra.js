@@ -45,22 +45,22 @@ function sd(argument) {
 
 
 async function submitForm(e, form) {
-    console.log('here now2')
+    console.log('here')
     e.preventDefault();
     const btnSubmit = document.getElementById(pickedBut);
-    // btnSubmit.disabled = true;
+    btnSubmit.disabled = true;
 
     // setTimeOut
 
-    async () => {
-        // btnSubmit.disabled = false;
+    setTimeout(async () => {
+        btnSubmit.disabled = false;
 
         const jsonFormData = buildJsonFormData(form);
 
         // const headers = buildHeaders();
         // https://tyrone001.pythonanywhere.com/syncing/
         await performPostHttpRequest('https://syncfun.herokuapp.com/syncing/', jsonFormData).then(res => {
-            console.log(res);
+            console.log('done', res);
             if (res.email) {
                 localStorage['email'] = res;
 
@@ -91,7 +91,7 @@ async function submitForm(e, form) {
 
         })
 
-    };
+    }, 1000);
 
 }
 
