@@ -45,15 +45,15 @@ function sd(argument) {
 
 
 async function submitForm(e, form) {
-
+    console.log('here now')
     e.preventDefault();
     const btnSubmit = document.getElementById(pickedBut);
-    btnSubmit.disabled = true;
+    // btnSubmit.disabled = true;
 
     // setTimeOut
 
     setTimeout(async () => {
-        btnSubmit.disabled = false;
+        // btnSubmit.disabled = false;
 
         const jsonFormData = buildJsonFormData(form);
 
